@@ -5,7 +5,7 @@ import com.company.Sorting.ElementarySorting;
 import com.company.Sorting.MergeSort;
 import com.company.Sorting.SelectionSort;
 
-public class Main {
+public class MainAlgo {
 
     public static void printArray(Comparable[] arr){
         for (int i = 0 ; i < arr.length; i++){
