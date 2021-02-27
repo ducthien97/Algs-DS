@@ -26,6 +26,7 @@ public class MainDS {
         System.out.println("Tail item = " + linkedQueue.getTail().getData());
         System.out.println("Size of stack = " + linkedStack.sizeOfStack());
         System.out.println("Top of stack = " + linkedStack.peek());
+        System.out.println("Bottom of stack = " + linkedStack.peekBottom());
         System.out.println("-----------------------------------------");
         System.out.println("Dequeued item: " + linkedQueue.dequeue());
         System.out.println("Popped item: " + linkedStack.pop());
@@ -34,5 +35,6 @@ public class MainDS {
         System.out.println("Head item = " + linkedQueue.getHead().getData());
         System.out.println("Tail item = " + linkedQueue.getTail().getData());
         System.out.println("Top of stack = " + linkedStack.peek());
+        System.out.println("Bottom of stack = " + linkedStack.peekBottom());
     }
 }

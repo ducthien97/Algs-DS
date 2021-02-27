@@ -4,6 +4,7 @@ package com.company.DataStructure;
 public class LinkedStack <Item>{
     private int n = 0; //size of stack
     private Node<Item> topItem;
+    private Node<Item> bottomItem;
     public int sizeOfStack(){
         return n;
     }
@@ -15,12 +16,14 @@ public class LinkedStack <Item>{
     public void push(Item item){
         if (isEmpty()){
             topItem = new Node<>();
+            bottomItem = new Node<>();
+            bottomItem.setData(item);
             topItem.setData(item);
             topItem.setNext(null);
         }
         else{
-            Node oldFirst = new Node();
-            oldFirst = topItem;
+            Node oldFirst = topItem;
+             // oldFirst = topItem;
             topItem = new Node<>();
             topItem.setNext(oldFirst);
             topItem.setData(item);
@@ -36,5 +39,8 @@ public class LinkedStack <Item>{
     }
     public Item peek(){
         return topItem.getData();
+    }
+    public Item peekBottom() {
+        return  bottomItem.getData();
     }
 }
