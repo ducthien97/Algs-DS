@@ -3,7 +3,7 @@ package com.company.DataStructure;
 
 public class LinkedStack <Item>{
     private int n = 0; //size of stack
-    Node<Item> topItem;
+    private Node<Item> topItem;
     public int sizeOfStack(){
         return n;
     }
@@ -24,8 +24,8 @@ public class LinkedStack <Item>{
             topItem = new Node<>();
             topItem.setNext(oldFirst);
             topItem.setData(item);
-            n++;
         }
+        n++;
     }
     public Item pop(){
         Item popped = this.topItem.getData();

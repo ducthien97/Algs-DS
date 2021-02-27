@@ -1,5 +1,5 @@
 package com.company.DataStructure;
-
+//representation of LinkedList (encapsulated version)
 public class Node<Item> {
     private Item data;
     private Node next;
